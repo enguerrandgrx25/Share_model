@@ -53,18 +53,43 @@ Les besoins généralistes sont sensiblement les mêmes dans toutes les startups
 Par contre, selon la nature du projet, l’impact de la technique sur le succès du projet peut varier énormément d’où une variabilité nettement plus importante (entre 70 et 130 points).
 """)
 
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 0, 30, 5)
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Generaliste ?', 0, 30, 5)
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 70, 130, 5)
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Generaliste ?', 90, 110, 5)
 
 #st.write("I'm ", age, 'years old')
 
-st.subheader("Concept de départ (0 - 30 points)")
-st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
-Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres et surtout certaines idées sont mieux à
-même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.""")
+st.subheader("Position de CEO (entre 40 et 100 points)")
+st.text("""Une équipe qui n’a pas clarifié dès le départ qui est censé trancher en dernier ressort fait fuir les investisseurs.
+Le choix de celui qui sera le CEO de la startup est un élément très structurant du projet. Le CEO est l’interlocuteur naturel des investisseurs financiers.
+Ils seront très sensibles à son profil et cela pèsera très lourd dans leur décision d’investir. Outre insuffler la vision et la culture d’entreprise,
+les VCs attendent aussi du CEO qu’il puisse prendre les décisions difficiles, notamment celles où il y a désaccord entre co-fondateurs.
 
-g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 5)
+A noter que dans l’étude Galion, parmi les équipes qui ont choisi une répartition inégalitaire, dans 80% des cas, le CEO avait plus de capital que les autres.
+
+Pour toutes ces raisons, l’impact particulier du CEO dans la bonne marche du projet justifie un bonus en capital lié à ce rôle.
+Le montant de ce bonus devra être modulé selon l’expérience antérieure du fondateur comme CEO, avec l’idée que cette expérience est censée être un prédicteur de la contribution à venir.
+De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus peut monter jusqu’à 100 points pour quelqu’un qui peut justifier d’une expérience de CEO longue et réussie dans des contextes très complexes.""")
+
+g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 5)
+
+
+st.subheader("Expérience antérieure pertinente (entre 0 et 100 points)")
+st.text("""Réussir à faire grandir une startup nécessite des compétences très particulières.
+Autrement dit, avoir des expériences réussies dans d’autres contextes professionnels n’est pas un bon prédicteur de la réussite dans une startup.
+
+Par contre, les statistiques montrent que les serial-fondateurs de startup deviennent de plus en plus efficaces au fil de leurs projets (d’où l’intérêt de commencer jeune sa carrière d’entrepreneur !).
+Les VCs sont très sensibles à ce point dans leur décision d’investir.
+En conséquence, seule l’expérience comme fondateur d’une startup a été retenue ici. Le montant du bonus dépend bien évidemment de la trajectoire des startups précédentes.
+On peut compter 20 points quelqu’un qui a réussi à lever quelques millions d’euros, jusqu’à 100 points ou plus pour celui qui a conduit une belle licorne jusqu’à une sortie réussie.""")
+
+g_ceo = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 5)
 #st.write("I'm ", age, 'years old')
+st.subheader("Expertise sectorielle (entre 0 et 20 points)")
+st.text("""UPour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
+Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent surestimée, car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
+D’où un bonus assez limité pour cet apport.""")
+
+g_ceo = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 5)
 
 
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
