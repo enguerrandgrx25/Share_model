@@ -23,7 +23,7 @@ st.image(image)
 st.title("Méthode Galion")
 
 
-st.subheader("Concept de départ (0 - 30 points)")
+st.subheader("1 - Concept de départ (0 - 30 points)")
 st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
 Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
 et surtout certaines idées sont mieux à
@@ -42,7 +42,7 @@ if(g_concept > 0):
 
 #st.write("I'm ", age, 'years old')
 
-st.subheader("Validation du concept (entre 0 et 120 points) ")
+st.subheader("2 - Validation du concept (entre 0 et 120 points) ")
 st.text("""Parfois au moment de la formation de la société,
 le concept de départ n’est qu’une ébauche sans rien de plus.
 Parfois certains associés ont déjà travaillé plusieurs semaines ou mois pour réunir des éléments donnant de la consistance à l’idée de départ.
@@ -62,7 +62,7 @@ if(g_val_concept > 0):
     g_val_concept_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_val_concept, 0)
 #st.write("I'm ", age, 'years old')
 
-st.subheader("Rôles techniques (entre 70 et 130 points) et rôles généralistes (entre 90 et 110 points)")
+st.subheader("3 - Rôles techniques (entre 70 et 130 points) et rôles généralistes (entre 90 et 110 points)")
 st.text("""On attend d’un fondateur qui a un profil généraliste qu’en fonction des besoins de la startup,
 il puisse faire potentiellement du commercial, de la finance, des opérations ou du marketing.
 Il est en effet souvent difficile de figer à l’avance quelle sera la contribution exacte des fondateurs généralistes, cette capacité de traiter des problèmes très différents étant la marque de fabrique des bons entrepreneurs.
@@ -87,7 +87,7 @@ g_role_tech = st.slider('Combien de point attribuons nous aux roles Généralist
 
 #st.write("I'm ", age, 'years old')
 
-st.subheader("Position de CEO (entre 40 et 100 points)")
+st.subheader("4 - Position de CEO (entre 40 et 100 points)")
 st.text("""Une équipe qui n’a pas clarifié dès le départ qui est censé trancher en dernier ressort fait fuir les investisseurs.
 Le choix de celui qui sera le CEO de la startup est un élément très structurant du projet. Le CEO est l’interlocuteur naturel des investisseurs financiers.
 Ils seront très sensibles à son profil et cela pèsera très lourd dans leur décision d’investir. Outre insuffler la vision et la culture d’entreprise,
@@ -113,7 +113,7 @@ On peut compter 20 points quelqu’un qui a réussi à lever quelques millions d
 
 g_ceo = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 0)
 #st.write("I'm ", age, 'years old')
-st.subheader("Expertise sectorielle (entre 0 et 20 points)")
+st.subheader("5 - Expertise sectorielle (entre 0 et 20 points)")
 st.text("""UPour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
 Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent surestimée, car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
 D’où un bonus assez limité pour cet apport.""")
@@ -125,7 +125,7 @@ g_ceo = st.slider('Combien de point attribuons nous à notre exp sectorielle ?',
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 
 
-st.header("Page 2 - Intrusion detection dashboard")
+
 
 
 
