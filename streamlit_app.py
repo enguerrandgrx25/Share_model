@@ -29,7 +29,11 @@ Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécond
 et surtout certaines idées sont mieux à
 même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.""")
 
-g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 5)
+g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 0)
+
+if(g_concept > 0):
+    g_concep_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, 30, 0)
+
 #st.write("I'm ", age, 'years old')
 
 st.subheader("Validation du concept (entre 0 et 120 points) ")
@@ -40,7 +44,7 @@ Il peut s’agir d’un business plan détaillé, d’une étude de marché aupr
 Ces éléments peuvent fournir des métriques importantes pour crédibiliser le projet et le rendre de fait (même si c’est en grande partie illusoire) moins risqué.
 Cela peut attirer d’autant plus talents et capitaux et donc a une valeur importante pour le projet.""")
 
-g_val_concept = st.slider('Combien de point attribuons nous à la validation du concept ?', 0, 120, 10)
+g_val_concept = st.slider('Combien de point attribuons nous à la validation du concept ?', 0, 120, 0)
 #st.write("I'm ", age, 'years old')
 
 st.subheader("Rôles techniques (entre 70 et 130 points) et rôles généralistes (entre 90 et 110 points)")
@@ -53,8 +57,8 @@ Les besoins généralistes sont sensiblement les mêmes dans toutes les startups
 Par contre, selon la nature du projet, l’impact de la technique sur le succès du projet peut varier énormément d’où une variabilité nettement plus importante (entre 70 et 130 points).
 """)
 
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 70, 130, 5)
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Generaliste ?', 90, 110, 5)
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 70, 130, 70)
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Generaliste ?', 90, 110, 90)
 
 #st.write("I'm ", age, 'years old')
 
@@ -70,7 +74,7 @@ Pour toutes ces raisons, l’impact particulier du CEO dans la bonne marche du p
 Le montant de ce bonus devra être modulé selon l’expérience antérieure du fondateur comme CEO, avec l’idée que cette expérience est censée être un prédicteur de la contribution à venir.
 De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus peut monter jusqu’à 100 points pour quelqu’un qui peut justifier d’une expérience de CEO longue et réussie dans des contextes très complexes.""")
 
-g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 5)
+g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 40)
 
 
 st.subheader("Expérience antérieure pertinente (entre 0 et 100 points)")
@@ -82,14 +86,14 @@ Les VCs sont très sensibles à ce point dans leur décision d’investir.
 En conséquence, seule l’expérience comme fondateur d’une startup a été retenue ici. Le montant du bonus dépend bien évidemment de la trajectoire des startups précédentes.
 On peut compter 20 points quelqu’un qui a réussi à lever quelques millions d’euros, jusqu’à 100 points ou plus pour celui qui a conduit une belle licorne jusqu’à une sortie réussie.""")
 
-g_ceo = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 5)
+g_ceo = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 0)
 #st.write("I'm ", age, 'years old')
 st.subheader("Expertise sectorielle (entre 0 et 20 points)")
 st.text("""UPour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
 Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent surestimée, car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
 D’où un bonus assez limité pour cet apport.""")
 
-g_ceo = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 5)
+g_ceo = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 0)
 
 
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
