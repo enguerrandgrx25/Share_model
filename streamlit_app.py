@@ -28,7 +28,7 @@ st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seul
 Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
 et surtout certaines idées sont mieux à
 même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.""")
-st.markdown("##"")
+st.markdown("##")
 
 g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 0)
 
@@ -37,8 +37,8 @@ g_concep_a = 0
 g_concep_n = 0
 
 if(g_concept > 0):
-    st.markdown("##"")
-    st.markdown("##"")
+    st.markdown("##")
+    st.markdown("##")
     g_concep_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_concept, 0)
     g_concep_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_concept, 0)
     g_concep_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_concept, 0)
