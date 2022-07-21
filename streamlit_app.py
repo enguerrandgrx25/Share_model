@@ -78,7 +78,7 @@ g_role_tech_e = 0
 g_role_tech_a = 0
 g_role_tech_n = 0
 
-if(g_role_tech > 0):
+if(g_role_tech > 70):
     g_role_tech_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_role_tech, 0)
     g_role_tech_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_role_tech, 0)
     g_role_tech_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_role_tech, 0)
