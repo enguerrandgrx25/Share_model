@@ -27,7 +27,8 @@ st.subheader("1 - Concept de départ (0 - 30 points)")
 st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
 Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
 et surtout certaines idées sont mieux à
-même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.""")
+même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.
+Ici on donne des points pour le secteur choisi et le concept""")
 st.markdown("##")
 
 g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 0)
@@ -63,8 +64,8 @@ g_val_concept_n = 0
 if(g_val_concept > 0):
     st.markdown("##")
     st.markdown("##")
-    g_val_concept_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_val_concept, 0)
     g_val_concept_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_val_concept, 0)
+    g_val_concept_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_val_concept, 0)
     g_val_concept_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_val_concept, 0)
 #st.write("I'm ", age, 'years old')
 
