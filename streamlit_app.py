@@ -31,8 +31,14 @@ même d’attirer les bons talents et les capitaux, ce qui est clé pour le dém
 
 g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 0)
 
+g_concep_e = 0
+g_concep_a = 0
+g_concep_n = 0
+
 if(g_concept > 0):
-    g_concep_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, 30, 0)
+    g_concep_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_concept- g_concep_a - g_concep_n, 0)
+    g_concep_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_concept- g_concep_a - g_concep_e, 0)
+    g_concep_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_concept- g_concep_e - g_concep_n, 0)
 
 #st.write("I'm ", age, 'years old')
 
