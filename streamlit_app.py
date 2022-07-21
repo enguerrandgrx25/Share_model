@@ -53,7 +53,7 @@ Il peut s’agir d’un business plan détaillé, d’une étude de marché aupr
 Ces éléments peuvent fournir des métriques importantes pour crédibiliser le projet et le rendre de fait (même si c’est en grande partie illusoire) moins risqué.
 Cela peut attirer d’autant plus talents et capitaux et donc a une valeur importante pour le projet.""")
 
-st.markdown("##"")
+st.markdown("##")
 g_val_concept = st.slider('Combien de point attribuons nous à la validation du concept ?', 0, 120, 0)
 
 g_val_concept_e = 0
@@ -61,8 +61,8 @@ g_val_concept_a = 0
 g_val_concept_n = 0
 
 if(g_val_concept > 0):
-    st.markdown("##"")
-    st.markdown("##"")
+    st.markdown("##")
+    st.markdown("##")
     g_val_concept_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_val_concept, 0)
     g_val_concept_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_val_concept, 0)
     g_val_concept_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_val_concept, 0)
@@ -78,7 +78,7 @@ Les besoins généralistes sont sensiblement les mêmes dans toutes les startups
 Par contre, selon la nature du projet, l’impact de la technique sur le succès du projet peut varier énormément d’où une variabilité nettement plus importante (entre 70 et 130 points).
 """)
 
-st.markdown("##"")
+st.markdown("##")
 g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 70, 130, 70)
 
 g_role_tech_e = 0
