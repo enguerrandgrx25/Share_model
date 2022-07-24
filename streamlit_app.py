@@ -22,6 +22,7 @@ st.image(image)
 # Title
 st.title("Méthode Galion")
 
+st.warning("""Le but de cet exercice est d'aborder des sujets important pour le succès de l'entreprise. Ces sujets ne sont pas forcement facile a aborder mais ils sont primordials""")
 
 st.subheader("1 - Concept de départ (0 - 30 points)")
 
@@ -254,17 +255,3 @@ if result:
     st.text("Alexandre: {}".format(round(score_a/tt_score, 2)))
     st.text("Nathan: {}".format(round(score_n/tt_score, 2)))
     st.text("Enguerrand: {}".format(round(score_e/tt_score, 2)))
-
-
-#st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-#st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-
-
-
-
-
-
-
-
-
-#df = pd.DataFrame(data)
