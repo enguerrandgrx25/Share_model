@@ -120,16 +120,7 @@ Pour toutes ces raisons, l’impact particulier du CEO dans la bonne marche du p
 Le montant de ce bonus devra être modulé selon l’expérience antérieure du fondateur comme CEO, avec l’idée que cette expérience est censée être un prédicteur de la contribution à venir.
 De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus peut monter jusqu’à 100 points pour quelqu’un qui peut justifier d’une expérience de CEO longue et réussie dans des contextes très complexes.""")
 
-g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 40)
 
-g_ceo_e = 0
-g_ceo_a = 0
-g_ceo_n = 0
-
-if(g_ceo > 40):
-    g_ceo_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_ceo, 0)
-    g_ceo_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_ceo, 0)
-    g_ceo_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_ceo, 0)
 
 
 
