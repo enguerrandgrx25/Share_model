@@ -192,9 +192,9 @@ if result:
 
     st.dataframe(df)
 
-    score_a = g__concep_a + g_val_concept_a + g_role_tech_a + g_role_gen_a + g_ceo_a + g_exp_fnd_a + g_exp_sec_a
-    score_n = g__concep_n + g_val_concept_n + g_role_tech_n + g_role_gen_n + g_ceo_n + g_exp_fnd_n + g_exp_sec_n
-    score_e = g__concep_e + g_val_concept_e + g_role_tech_e + g_role_gen_e + g_ceo_e + g_exp_fnd_e + g_exp_sec_e
+    score_a = g_concep_a + g_val_concept_a + g_role_tech_a + g_role_gen_a + g_ceo_a + g_exp_fnd_a + g_exp_sec_a
+    score_n = g_concep_n + g_val_concept_n + g_role_tech_n + g_role_gen_n + g_ceo_n + g_exp_fnd_n + g_exp_sec_n
+    score_e = g_concep_e + g_val_concept_e + g_role_tech_e + g_role_gen_e + g_ceo_e + g_exp_fnd_e + g_exp_sec_e
 
 
     st.subheader("Voici donc la somme des scores par personne: ")
