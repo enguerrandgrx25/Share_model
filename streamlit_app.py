@@ -95,7 +95,16 @@ if(g_role_tech > 70):
     g_role_tech_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_role_tech, 0)
     g_role_tech_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_role_tech, 0)
 
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
+g_role_gen = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
+
+g_role_gen_e = 0
+g_role_gen_a = 0
+g_role_gen_n = 0
+
+if(g_role_gen > 90):
+    g_role_gen_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_role_gen, 0)
+    g_role_gen_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_role_gen, 0)
+    g_role_gen_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_role_gen, 0)
 
 #st.write("I'm ", age, 'years old')
 
@@ -121,6 +130,8 @@ if(g_ceo > 40):
     g_ceo_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_ceo, 0)
     g_ceo_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_ceo, 0)
     g_ceo_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_ceo, 0)
+
+
 
 g_role_tech = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
 
