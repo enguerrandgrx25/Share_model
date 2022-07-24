@@ -176,7 +176,23 @@ if(g_exp_sec > 0):
 
 result = st.checkbox("Pret pour les resultats ?")
 if result:
+    st.text("##")
     st.balloons()
+
+    d = {
+    "Type d'apport": ["Concept", "Validation du concept", "Roles Tech", "Roles Généraliste", "Position CEO",
+    "Exp fondateurs", "Exp secteur"],
+    'Min': [0, 0, 70, 90, 40, 0, 0],
+    'Max': [30, 120, 130, 110, 100, 100, 20],
+    'Score Alex': [g_concep_a, g_val_concept_a, g_role_tech_a, g_role_gen_a, g_ceo_a, g_exp_fnd_a, g_exp_sec_a],
+    'Score Nathan': [g_concep_n, g_val_concept_n, g_role_tech_n, g_role_gen_n, g_ceo_n, g_exp_fnd_n, g_exp_sec_n],
+    'Score Enguerrand': [g_concep_e, g_val_concept_e, g_role_tech_e, g_role_gen_e, g_ceo_e, g_exp_fnd_e, g_exp_sec_e]}
+
+    df = pd.DataFrame(data=d)
+
+    st.dataframe(df)
+
+
     st.info('Nous allons vous alerter  pour les fuite de données !')
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
