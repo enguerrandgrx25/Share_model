@@ -190,6 +190,17 @@ if result:
 
     df = pd.DataFrame(data=d)
 
+    # CSS to inject contained in a string
+    hide_dataframe_row_index = """
+                <style>
+                .row_heading.level0 {display:none}
+                .blank {display:none}
+                </style>
+                """
+
+    # Inject CSS with Markdown
+    st.markdown(hide_dataframe_row_index, unsafe_allow_html=True)
+
     st.dataframe(df)
 
     score_a = g_concep_a + g_val_concept_a + g_role_tech_a + g_role_gen_a + g_ceo_a + g_exp_fnd_a + g_exp_sec_a
