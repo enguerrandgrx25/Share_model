@@ -11,7 +11,7 @@ from PIL import Image
 
 
 st.set_page_config(
-    page_title="Hello hello",
+    page_title="Méthode Galion for CYNA",
     page_icon="👋",
 )
 
@@ -192,8 +192,25 @@ if result:
 
     st.dataframe(df)
 
+    score_a = g__concep_a + g_val_concept_a + g_role_tech_a + g_role_gen_a + g_ceo_a + g_exp_fnd_a + g_exp_sec_a
+    score_n = g__concep_n + g_val_concept_n + g_role_tech_n + g_role_gen_n + g_ceo_n + g_exp_fnd_n + g_exp_sec_n
+    score_e = g__concep_e + g_val_concept_e + g_role_tech_e + g_role_gen_e + g_ceo_e + g_exp_fnd_e + g_exp_sec_e
 
-    st.info('Nous allons vous alerter  pour les fuite de données !')
+
+    st.subheader("Voici donc la somme des scores par personne: ")
+    st.text("Le score d'Alexandre est de: {}".format(score_a))
+    st.text("Le score de Nathan est de: {}".format(score_n))
+    st.text("Le score d'Enguerrand est de: {}".format(score_e))
+
+    tt_score = score_a + score_n + score_e
+
+
+    st.subheader("Voici donc la répartition proposé par la methode du Gallion: ")
+    st.text("Alexandre: {}".format(score_a/tt_score))
+    st.text("Nathan: {}".format(score_n/tt_score))
+    st.text("Enguerrand: {}".format(score_e/tt_score))
+
+
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 
