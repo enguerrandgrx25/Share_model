@@ -206,7 +206,7 @@ if result:
 
 
     st.subheader("Voici donc la répartition proposé par la methode du Gallion: ")
-    st.text("Alexandre: {}".format(score_a/tt_score))
+    st.text("Alexandre: {}".format(round(score_a/tt_score, 0.1)))
     st.text("Nathan: {}".format(score_n/tt_score))
     st.text("Enguerrand: {}".format(score_e/tt_score))
 
