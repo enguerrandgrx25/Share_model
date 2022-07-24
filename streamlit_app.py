@@ -175,7 +175,7 @@ if(g_exp_sec > 0):
 
 
 result = st.checkbox("Pret pour les resultats ?")
-if data:
+if result:
      st.info('Nous allons vous alerter  pour les fuite de données !')
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
