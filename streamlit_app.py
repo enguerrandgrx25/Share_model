@@ -30,7 +30,7 @@ Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécond
 et surtout certaines idées sont mieux à
 même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.
 Ici on donne des points pour le secteur choisi et le concept""")
-st.sucess("""Ici on donne des points pour le secteur choisi et le concept""")
+st.sucess("Ici on donne des points pour le secteur choisi et le concept")
 
 
 st.markdown("##")
