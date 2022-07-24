@@ -142,15 +142,15 @@ if ok:
     Ils seront très sensibles à son profil et cela pèsera très lourd dans leur décision d’investir.
     Outre insuffler la vision et la culture d’entreprise, les VCs attendent aussi du CEO qu’il puisse prendre les décisions difficiles,
     notamment celles où il y a désaccord entre co-fondateurs.
-
     A noter que dans l’étude Galion, parmi les équipes qui ont choisi une répartition inégalitaire,
     dans 80% des cas, le CEO avait plus de capital que les autres.
-
     Pour toutes ces raisons, l’impact particulier du CEO dans la bonne marche du projet justifie un bonus en capital lié à ce rôle.
     Le montant de ce bonus devra être modulé selon l’expérience antérieure du fondateur comme CEO, avec l’idée que cette expérience est censée être un prédicteur de la contribution à venir.
     De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus peut monter jusqu’à 100 points pour quelqu’un qui peut justifier d’une expérience de CEO longue et réussie dans des contextes très complexes.""")
 
     st.warning("Ici on donne des points pour l'experience en tant que CEO de celui qui sera CEO")
+
+    st.error("Le role du CEO est primordial, qui sera CEO ? Quels sont ses points fort ? Quels sont ses points faible ? Comment s'appuyer sur ses points fort ? Comment reduire ses points faible ?")
 
 
     g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 40)
@@ -169,7 +169,6 @@ if ok:
     st.subheader("5 - Expérience antérieure pertinente (entre 0 et 100 points)")
     st.info("""Réussir à faire grandir une startup nécessite des compétences très particulières.
     Autrement dit, avoir des expériences réussies dans d’autres contextes professionnels n’est pas un bon prédicteur de la réussite dans une startup.
-
     Par contre, les statistiques montrent que les serial-fondateurs de startup deviennent de plus en plus efficaces au fil de leurs projets (d’où l’intérêt de commencer jeune sa carrière d’entrepreneur !).
     Les VCs sont très sensibles à ce point dans leur décision d’investir.
     En conséquence, seule l’expérience comme fondateur d’une startup a été retenue ici. Le montant du bonus dépend bien évidemment de la trajectoire des startups précédentes.
