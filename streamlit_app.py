@@ -32,11 +32,6 @@ même d’attirer les bons talents et les capitaux, ce qui est clé pour le dém
 Ici on donne des points pour le secteur choisi et le concept""")
 
 
-st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
-Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
-et surtout certaines idées sont mieux à
-même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.
-Ici on donne des points pour le secteur choisi et le concept""")
 st.markdown("##")
 
 g_concept = st.slider('Combien de point attribuons nous au concepts de base ?', 0, 30, 0)
@@ -55,7 +50,8 @@ if(g_concept > 0):
 #st.write("I'm ", age, 'years old')
 
 st.subheader("2 - Validation du concept (entre 0 et 120 points) ")
-st.text("""Parfois au moment de la formation de la société,
+
+st.info("""Parfois au moment de la formation de la société,
 le concept de départ n’est qu’une ébauche sans rien de plus.
 Parfois certains associés ont déjà travaillé plusieurs semaines ou mois pour réunir des éléments donnant de la consistance à l’idée de départ.
 Il peut s’agir d’un business plan détaillé, d’une étude de marché auprès de clients potentiels, d’une maquette technique, voire d’un vrai prototype opérationnel.
@@ -78,7 +74,7 @@ if(g_val_concept > 0):
 #st.write("I'm ", age, 'years old')
 
 st.subheader("3 - Rôles techniques (entre 70 et 130 points) et rôles généralistes (entre 90 et 110 points)")
-st.text("""On attend d’un fondateur qui a un profil généraliste qu’en fonction des besoins de la startup,
+st.info("""On attend d’un fondateur qui a un profil généraliste qu’en fonction des besoins de la startup,
 il puisse faire potentiellement du commercial, de la finance, des opérations ou du marketing.
 Il est en effet souvent difficile de figer à l’avance quelle sera la contribution exacte des fondateurs généralistes, cette capacité de traiter des problèmes très différents étant la marque de fabrique des bons entrepreneurs.
 Pour la technique par contre, on ne peut pas s’improviser dessus et seuls les fondateurs qui ont les compétences adéquates pourront prétendre contribuer utilement dans ce domaine.
@@ -104,7 +100,7 @@ g_role_tech = st.slider('Combien de point attribuons nous aux roles Généralist
 #st.write("I'm ", age, 'years old')
 
 st.subheader("4 - Position de CEO (entre 40 et 100 points)")
-st.text("""Une équipe qui n’a pas clarifié dès le départ qui est censé trancher en dernier ressort fait fuir les investisseurs.
+st.info("""Une équipe qui n’a pas clarifié dès le départ qui est censé trancher en dernier ressort fait fuir les investisseurs.
 Le choix de celui qui sera le CEO de la startup est un élément très structurant du projet. Le CEO est l’interlocuteur naturel des investisseurs financiers.
 Ils seront très sensibles à son profil et cela pèsera très lourd dans leur décision d’investir. Outre insuffler la vision et la culture d’entreprise,
 les VCs attendent aussi du CEO qu’il puisse prendre les décisions difficiles, notamment celles où il y a désaccord entre co-fondateurs.
@@ -130,7 +126,7 @@ g_role_tech = st.slider('Combien de point attribuons nous aux roles Généralist
 
 
 st.subheader("5 - Expérience antérieure pertinente (entre 0 et 100 points)")
-st.text("""Réussir à faire grandir une startup nécessite des compétences très particulières.
+st.info("""Réussir à faire grandir une startup nécessite des compétences très particulières.
 Autrement dit, avoir des expériences réussies dans d’autres contextes professionnels n’est pas un bon prédicteur de la réussite dans une startup.
 
 Par contre, les statistiques montrent que les serial-fondateurs de startup deviennent de plus en plus efficaces au fil de leurs projets (d’où l’intérêt de commencer jeune sa carrière d’entrepreneur !).
@@ -154,7 +150,7 @@ g_role_tech = st.slider('Combien de point attribuons nous aux roles Généralist
 
 
 st.subheader("6 - Expertise sectorielle (entre 0 et 20 points)")
-st.text("""Pour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
+st.info("""Pour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
 Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent surestimée, car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
 D’où un bonus assez limité pour cet apport.""")
 
