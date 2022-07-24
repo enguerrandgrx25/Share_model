@@ -154,8 +154,7 @@ if(g_exp_fnd > 0):
     g_exp_fnd_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_exp_fnd, 0)
     g_exp_fnd_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_exp_fnd, 0)
 
-g_role_tech = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
-#st.write("I'm ", age, 'years old')
+
 
 
 st.subheader("6 - Expertise sectorielle (entre 0 et 20 points)")
