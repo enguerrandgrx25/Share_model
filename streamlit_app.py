@@ -53,9 +53,13 @@ st.subheader("2 - Validation du concept (entre 0 et 120 points) ")
 
 st.info("""Parfois au moment de la formation de la société,
 le concept de départ n’est qu’une ébauche sans rien de plus.
-Parfois certains associés ont déjà travaillé plusieurs semaines ou mois pour réunir des éléments donnant de la consistance à l’idée de départ.
-Il peut s’agir d’un business plan détaillé, d’une étude de marché auprès de clients potentiels, d’une maquette technique, voire d’un vrai prototype opérationnel.
-Ces éléments peuvent fournir des métriques importantes pour crédibiliser le projet et le rendre de fait (même si c’est en grande partie illusoire) moins risqué.
+Parfois certains associés ont déjà travaillé plusieurs semaines ou mois pour réunir
+des éléments donnant de la consistance à l’idée de départ.
+Il peut s’agir d’un business plan détaillé,
+d’une étude de marché auprès de clients potentiels, d’une maquette technique,
+voire d’un vrai prototype opérationnel.
+Ces éléments peuvent fournir des métriques importantes pour crédibiliser
+le projet et le rendre de fait (même si c’est en grande partie illusoire) moins risqué.
 Cela peut attirer d’autant plus talents et capitaux et donc a une valeur importante pour le projet.""")
 
 st.markdown("##")
@@ -90,7 +94,7 @@ g_role_tech_e = 0
 g_role_tech_a = 0
 g_role_tech_n = 0
 
-if(g_role_tech > 70):
+if(g_role_tech >= 70):
     g_role_tech_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_role_tech, 0)
     g_role_tech_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_role_tech, 0)
     g_role_tech_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_role_tech, 0)
@@ -101,7 +105,7 @@ g_role_gen_e = 0
 g_role_gen_a = 0
 g_role_gen_n = 0
 
-if(g_role_gen > 90):
+if(g_role_gen >= 90):
     g_role_gen_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_role_gen, 0)
     g_role_gen_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_role_gen, 0)
     g_role_gen_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_role_gen, 0)
@@ -127,7 +131,7 @@ g_ceo_e = 0
 g_ceo_a = 0
 g_ceo_n = 0
 
-if(g_ceo > 40):
+if(g_ceo >= 40):
     g_ceo_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_ceo, 0)
     g_ceo_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_ceo, 0)
     g_ceo_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_ceo, 0)
