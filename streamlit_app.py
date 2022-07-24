@@ -24,6 +24,14 @@ st.title("Méthode Galion")
 
 
 st.subheader("1 - Concept de départ (0 - 30 points)")
+
+st.info("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
+Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
+et surtout certaines idées sont mieux à
+même d’attirer les bons talents et les capitaux, ce qui est clé pour le démarrage d’une startup.
+Ici on donne des points pour le secteur choisi et le concept""")
+
+
 st.text("""On dit souvent avec raison que les idées n’ont pas de valeur, seule compte l’exécution.
 Ce n’est pas entièrement vrai. Certaines idées sont quand même plus fécondes que d’autres
 et surtout certaines idées sont mieux à
@@ -109,8 +117,19 @@ De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus pe
 
 g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 40)
 
+g_ceo_e = 0
+g_ceo_a = 0
+g_ceo_n = 0
 
-st.subheader("Expérience antérieure pertinente (entre 0 et 100 points)")
+if(g_ceo > 40):
+    g_ceo_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_ceo, 0)
+    g_ceo_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_ceo, 0)
+    g_ceo_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_ceo, 0)
+
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
+
+
+st.subheader("5 - Expérience antérieure pertinente (entre 0 et 100 points)")
 st.text("""Réussir à faire grandir une startup nécessite des compétences très particulières.
 Autrement dit, avoir des expériences réussies dans d’autres contextes professionnels n’est pas un bon prédicteur de la réussite dans une startup.
 
@@ -119,16 +138,41 @@ Les VCs sont très sensibles à ce point dans leur décision d’investir.
 En conséquence, seule l’expérience comme fondateur d’une startup a été retenue ici. Le montant du bonus dépend bien évidemment de la trajectoire des startups précédentes.
 On peut compter 20 points quelqu’un qui a réussi à lever quelques millions d’euros, jusqu’à 100 points ou plus pour celui qui a conduit une belle licorne jusqu’à une sortie réussie.""")
 
-g_ceo = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 0)
+g_exp_fnd = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 0)
+
+g_exp_fnd_e = 0
+g_exp_fnd_a = 0
+g_exp_fnd_n = 0
+
+if(g_exp_fnd > 0):
+    g_exp_fnd_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_exp_fnd, 0)
+    g_exp_fnd_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_exp_fnd, 0)
+    g_exp_fnd_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_exp_fnd, 0)
+
+g_role_tech = st.slider('Combien de point attribuons nous aux roles Généraliste ?', 90, 110, 90)
 #st.write("I'm ", age, 'years old')
-st.subheader("5 - Expertise sectorielle (entre 0 et 20 points)")
-st.text("""UPour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
+
+
+st.subheader("6 - Expertise sectorielle (entre 0 et 20 points)")
+st.text("""Pour certains projets, une expertise sectorielle permet d’éviter certains tâtonnements et de gagner du temps sur les premières itérations du projet.
 Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent surestimée, car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
 D’où un bonus assez limité pour cet apport.""")
 
-g_ceo = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 0)
+g_exp_sec = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 0)
+
+g_exp_sec_e = 0
+g_exp_sec_a = 0
+g_exp_sec_n = 0
+
+if(g_exp_sec > 0):
+    g_exp_sec_a = st.slider('Combien de point attribuons nous à Alex ?', 0, g_exp_sec, 0)
+    g_exp_sec_e = st.slider('Combien de point attribuons nous à Enguerrand ?', 0, g_exp_sec, 0)
+    g_exp_sec_n = st.slider('Combien de point attribuons nous à Nathan ?', 0, g_exp_sec, 0)
 
 
+result = st.checkbox("Pret pour les resultats ?")
+if data:
+     st.info('Nous allons vous alerter  pour les fuite de données !')
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 #st.checkbox(label, value=False, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 
