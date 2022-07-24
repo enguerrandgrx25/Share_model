@@ -63,9 +63,7 @@ Ces éléments peuvent fournir des métriques importantes pour crédibiliser
 le projet et le rendre de fait (même si c’est en grande partie illusoire) moins risqué.
 Cela peut attirer d’autant plus talents et capitaux et donc a une valeur importante pour le projet.""")
 
-st.sucess("""Ici on donne des points pour les elements qui crédibilisent le projet: business plan détaillé,
-d’une étude de marché auprès de clients potentiels, d’une maquette technique,
-voire d’un vrai prototype opérationnel. """)
+st.sucess("Ici on donne des points pour les elements qui crédibilisent le projet: business plan détaillé,d’une étude de marché auprès de clients potentiels, d’une maquette technique,voire d’un vrai prototype opérationnel.")
 
 st.markdown("##")
 g_val_concept = st.slider('Combien de point attribuons nous à la validation du concept ?', 0, 120, 0)
@@ -92,7 +90,7 @@ cette capacité de traiter des problèmes très différents étant la marque de 
 Les besoins généralistes sont sensiblement les mêmes dans toutes les startups,
 donc la variabilité spécifique liée au projet est assez limité (entre 90 et 110 points).
 """)
-st.sucess("""Ici on donne des points pour l'importance de la partie Business / Générale""")
+st.sucess("Ici on donne des points pour l'importance de la partie Business / Générale")
 
 st.markdown("##")
 
@@ -117,7 +115,7 @@ Par contre, selon la nature du projet, l’impact de la technique sur le succès
 énormément d’où une variabilité nettement plus importante (entre 70 et 130 points).
 """)
 
-st.sucess("""Ici on donne des points pour l'importance de la partie Technique""")
+st.sucess("Ici on donne des points pour l'importance de la partie Technique")
 
 g_role_tech = st.slider('Combien de point attribuons nous aux roles Tech ?', 70, 130, 70)
 
@@ -148,7 +146,7 @@ Pour toutes ces raisons, l’impact particulier du CEO dans la bonne marche du p
 Le montant de ce bonus devra être modulé selon l’expérience antérieure du fondateur comme CEO, avec l’idée que cette expérience est censée être un prédicteur de la contribution à venir.
 De 40 points si c’est la première fois qu’il est dans ce rôle, le bonus peut monter jusqu’à 100 points pour quelqu’un qui peut justifier d’une expérience de CEO longue et réussie dans des contextes très complexes.""")
 
-st.sucess("""Ici on donne des points pour l'experience en tant que CEO de celui qui sera CEO""")
+st.sucess("Ici on donne des points pour l'experience en tant que CEO de celui qui sera CEO")
 
 
 g_ceo = st.slider('Combien de point attribuons nous au role de CEO ?', 40, 100, 40)
@@ -173,7 +171,7 @@ Les VCs sont très sensibles à ce point dans leur décision d’investir.
 En conséquence, seule l’expérience comme fondateur d’une startup a été retenue ici. Le montant du bonus dépend bien évidemment de la trajectoire des startups précédentes.
 On peut compter 20 points quelqu’un qui a réussi à lever quelques millions d’euros, jusqu’à 100 points ou plus pour celui qui a conduit une belle licorne jusqu’à une sortie réussie.""")
 
-st.sucess("""Ici on donne des points pour l'experience en Startup""")
+st.sucess("Ici on donne des points pour l'experience en Startup")
 
 
 g_exp_fnd = st.slider('Combien de point attribuons nous à nos experiences antérieurs ?', 0, 100, 0)
@@ -196,7 +194,7 @@ Néanmoins, sur le long terme, ce type d’expertise sectorielle est souvent sur
 car les fondateurs peuvent assez facilement recruter ces experts comme employés ou consultants.
 D’où un bonus assez limité pour cet apport.""")
 
-st.sucess("""Ici on donne des points pour l'experience dans la Cybersecurité""")
+st.sucess("Ici on donne des points pour l'experience dans la Cybersecurité")
 
 g_exp_sec = st.slider('Combien de point attribuons nous à notre exp sectorielle ?', 0, 20, 0)
 
